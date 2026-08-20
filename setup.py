@@ -1,18 +1,8 @@
-from pathlib import Path
-
-from setuptools import setup
-
-# Read the contents of README file
-source_root = Path(".")
-
-try:
-    version = (source_root / "VERSION").read_text().rstrip("\n")
-except FileNotFoundError:
-    version = "0.0.dev0"
-
-with open(source_root / "src/data_profiling/version.py", "w") as version_file:
-    version_file.write(f"__version__ = '{version}'")
-
-setup(
-    version=version,
-)
+!pip install "Z:\tests\pyyaml-6.0.3-cp312-cp312-win_amd64.whl"
+!pip install "Z:\tests\dacite-1.8.1-py3-none-any.whl"
+!pip install "Z:\tests\multimethod-1.9.9-py3-none-any.whl"
+!pip install "Z:\tests\tangled_up_in_unicode-0.2.0-py3-none-any.whl"
+!pip install "Z:\tests\visions-0.7.7-py3-none-any.whl"
+!pip install "Z:\tests\phik-0.12.4-py3-none-any.whl"
+!pip install "Z:\tests\Jinja2-3.1.2-py3-none-any.whl"
+!pip install --no-deps "Z:\tests\ydata_profiling-4_18_4-py2_py3-none-any.whl"
